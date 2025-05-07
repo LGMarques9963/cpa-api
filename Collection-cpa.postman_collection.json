@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "b554efd5-fcdb-48a8-8a29-e3c276936d99",
+		"name": "Collection-cpa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37778645"
+	},
+	"item": [
+		{
+			"name": "filtro",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Attack Type\": \"DDoS\",\n    \"Target Industry\": \"Government\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/filtro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"filtro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "limit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/limit/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"limit",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "attack_type",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:5000/attack_type/DDoS",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"attack_type",
+						"DDoS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Attack Type\": \"DDoS\",\n    \"Target Industry\": \"Government\",\n    \"Country\": \"Brazil\",\n    \"Year\": 2025,\n    \"Financial Loss (in Million $)\": 10000,\n    \"Number of Affected Users\": 5000,\n    \"Attack Source\": \"Unknown\",\n    \"Security Vulnerability Type\": \"Zero-day\",\n    \"Defense Mechanism\": \"Firewall\",\n    \"Incident Resolution Time (in Hours)\": 24,\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/insere",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"insere"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Attack Type\": \"DDoS\",\n    \"Target Industry\": \"Government\",\n    \"Country\": \"Brazil\",\n    \"Year\": 2025,\n    \"Financial Loss (in Million $)\": 20000,\n    \"Number of Affected Users\": 10000,\n    \"Attack Source\": \"Unknown\",\n    \"Security Vulnerability Type\": \"Zero-day\",\n    \"Defense Mechanism\": \"Firewall\",\n    \"Incident Resolution Time (in Hours)\": 12,\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/update/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"update",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/delete/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"delete",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
