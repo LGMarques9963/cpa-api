@@ -1,7 +1,6 @@
 Country,Year,Attack Type,Target Industry,Financial Loss (in Million $),Number of Affected Users,Attack Source,Security Vulnerability Type,Defense Mechanism Used,Incident Resolution Time (in Hours),Count,Defense Mechanism
-China,2019,Ransomware,Retail,62.19,295961.0,Hacker Group,Unpatched Software,Firewall,71.0,,
 India,2017,Man-in-the-Middle,IT,38.65,605895.0,Hacker Group,Weak Passwords,VPN,20.0,,
-UK,2024,Ransomware,Telecommunications,41.44,659320.0,Nation-state,Social Engineering,AI-based Detection,7.0,,
+Brazil,2025,DDoS,Government,20000.0,10000.0,Unknown,Zero-day,,12.0,,Firewall
 Germany,2018,Man-in-the-Middle,IT,74.41,810682.0,Insider,Social Engineering,VPN,68.0,,
 Germany,2017,Man-in-the-Middle,Retail,98.24,285201.0,Unknown,Social Engineering,Antivirus,25.0,,
 Germany,2016,DDoS,Telecommunications,33.26,431262.0,Insider,Unpatched Software,VPN,34.0,,
@@ -2999,4 +2998,5 @@ Brazil,2017,SQL Injection,IT,32.97,734737.0,Nation-state,Weak Passwords,AI-based
 UK,2022,SQL Injection,IT,32.17,379954.0,Insider,Unpatched Software,Firewall,9.0,,
 Germany,2021,SQL Injection,Retail,48.2,480984.0,Unknown,Zero-day,VPN,64.0,,
 USA,2023,Phishing,,,,,,,,1000.0,
+Brazil,2025,DDoS,Government,10000.0,5000.0,Unknown,Zero-day,,24.0,,Firewall
 Brazil,2025,DDoS,Government,10000.0,5000.0,Unknown,Zero-day,,24.0,,Firewall

@@ -27,7 +27,7 @@ def delete(id):
 
 dados_filtro = {
     "Attack Type": "DDoS",
-    "Target Industry": "Government",
+    "Target Industry": "Government"
 }
 
 print("Testando o filtro")
@@ -50,7 +50,7 @@ dados_insert = {
     "Attack Source": "Unknown",
     "Security Vulnerability Type": "Zero-day",
     "Defense Mechanism": "Firewall",
-    "Incident Resolution Time (in Hours)": 24,
+    "Incident Resolution Time (in Hours)": 24
 }
 insert(dados_insert)
 
@@ -65,7 +65,7 @@ dados_update = {
     "Attack Source": "Unknown",
     "Security Vulnerability Type": "Zero-day",
     "Defense Mechanism": "Firewall",
-    "Incident Resolution Time (in Hours)": 12,
+    "Incident Resolution Time (in Hours)": 12
 }
 update(0, dados_update)
 
